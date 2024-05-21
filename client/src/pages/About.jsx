@@ -3,14 +3,14 @@ export default function About() {
     <div className='min-h-screen flex items-center justify-center'>
       <div className='max-w-2xl mx-auto p-3 text-center'>
         <div>
-          <h1 className='text-3xl font font-semibold text-center my-7'>
-            About Sahand' Blog
+          <h1 className='text-3xl font font-semibold text-center m-4 p-8 bg-pink-400 my-7 text-white rounded-lg'>
+            About Tech's Blog
           </h1>
           <div className='text-md text-gray-500 flex flex-col gap-6'>
             <p>
-              Welcome to Sahand's Blog! This blog was created by Sahand Ghavidel
+              Welcome to Tech's Blog! This blog was created by Sakshi Pathak
               as a personal project to share his thoughts and ideas with the
-              world. Sahand is a passionate developer who loves to write about
+              world. Sakshi is a passionate developer who loves to write about
               technology, coding, and everything in between.
             </p>
 

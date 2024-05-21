@@ -60,8 +60,7 @@ export default function DashProfile() {
     //     }
     //   }
     // }
-    setImageFileUploading(true);
-    setImageFileUploadError(null);
+    // setImageFileUploadError(null);
     const storage = getStorage(app);
     const fileName = new Date().getTime() + imageFile.name;
     const storageRef = ref(storage, fileName);
