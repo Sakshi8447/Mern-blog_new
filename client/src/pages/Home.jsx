@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import CallToAction from '../components/CallToAction';
 import { useEffect, useState } from 'react';
+import { baseURL } from '../constant/baseURL';
 //import PostCard from '../components/PostCard';
 
 export default function Home() {
@@ -8,7 +9,7 @@ export default function Home() {
 
   useEffect(() => {
     const fetchPosts = async () => {
-      const res = await fetch('/api/post/getPosts');
+      const res = await fetch(`${baseURL}/api/post/getPosts`);
       const data = await res.json();
       setPosts(data.posts);
     };

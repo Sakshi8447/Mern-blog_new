@@ -1,0 +1,1 @@
+ export const baseURL = `https://mern-blog-new-7kru.onrender.com`;
