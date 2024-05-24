@@ -6,6 +6,7 @@ import CommentSection from '../components/CommentSection';
 import PostCard from '../components/PostCard';
 import { baseURL } from '../constant/baseURL';
 
+
 export default function PostPage() {
   const { postSlug } = useParams();
   const [loading, setLoading] = useState(true);
@@ -17,7 +18,7 @@ export default function PostPage() {
     const fetchPost = async () => {
       try {
         setLoading(true);
-        const res = await axios. fetch(`${baseURL}/api/post/getposts?slug=${postSlug}`);
+        const res = await fetch(`${baseURL}/api/post/getposts?slug=${postSlug}`);
         const data = await res.json();
         if (!res.ok) {
           setError(true);
